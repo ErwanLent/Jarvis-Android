@@ -1,0 +1,87 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#344A73" >
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="14dp"
+        android:src="@drawable/launcher" />
+
+    <com.jarvis.views.ToggleButton
+        android:id="@+id/weatherButton"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@+id/imageView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="50dp"
+        android:background="#80ffffff"
+        android:clickable="true"
+        android:onClick="onWeatherButtonClick"
+        android:text="@string/weather_button" />
+
+    <com.jarvis.views.ToggleButton
+        android:id="@+id/stocksButton"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@+id/imageView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="125dp"
+        android:background="#80ffffff"
+        android:onClick="onStocksButtonClick"
+        android:text="@string/stocks_button" />
+
+    <com.jarvis.views.ToggleButton
+        android:id="@+id/newsButton"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@+id/imageView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="200dp"
+        android:background="#80ffffff"
+        android:onClick="onNewsButtonClick"
+        android:text="@string/news_button" />
+
+    <com.jarvis.views.NeouTextView
+        android:id="@+id/jarvisHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:paddingRight="20dp"
+        android:text="@string/app_name"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#F45710"
+        android:textSize="65sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#262626"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/nextButton"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:background="#F35717"
+            android:onClick="onStartButtonClick"
+            android:paddingLeft="75dp"
+            android:paddingRight="75dp"
+            android:text="Let&apos;s Start"
+            android:textColor="#ffffff" />
+
+    </LinearLayout>
+
+</RelativeLayout>
